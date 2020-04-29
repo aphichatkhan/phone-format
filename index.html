@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" class="input-phone" oninput="handleInputPhone()">
+  <script>
+    function handleInputPhone () {
+      const selector = document.getElementsByClassName('input-phone')[0]
+      const value = selector.value
+      if (value.length === 3) selector.value = `${value}-`
+    }
+  </script>
+</body>
+</html>
